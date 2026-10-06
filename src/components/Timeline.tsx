@@ -1,7 +1,7 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
@@ -10,56 +10,68 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Career History</h1>
+        <h1>Parcours</h1>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="09/2025 - aujourd'hui"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Ingénieure logiciel Full-Stack</h3>
+            <h4 className="vertical-timeline-element-subtitle">Yool Education · Casablanca</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Développement et maintenance des applications web et mobiles (Flutter), intégration d'API REST et d'un chatbot, fonctionnalités offline avec synchronisation des données, méthodologie Agile.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="02/2025 - 07/2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Développeuse Mobile & IA (Stage PFE)</h3>
+            <h4 className="vertical-timeline-element-subtitle">Yool Education · Casablanca</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Application mobile Flutter de gestion des séances pédagogiques. Chatbot intelligent (LLM OpenAI + RAG) avec backend Flask et LangChain, frontend Angular.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="07/2024 - 09/2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Développeuse web Full-Stack (Stage)</h3>
+            <h4 className="vertical-timeline-element-subtitle">Cactus Informatique · Casablanca</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+              Application de gestion des incidents : Node.js/Express, Angular, MySQL, Socket.IO, PDF.js, Chart.js. API REST testée avec Postman.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
+            date="07/2023 - 08/2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Développeuse (Stage)</h3>
+            <h4 className="vertical-timeline-element-subtitle">BESITEAM · Mohammedia</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Application desktop de gestion des bornes électriques : modélisation UML, C++, Windows Forms, SQL Server.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2022 - 2025"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
+          >
+            <h3 className="vertical-timeline-element-title">Cycle d'ingénieur - Génie Logiciel et Systèmes Informatiques Distribués</h3>
+            <h4 className="vertical-timeline-element-subtitle">ENSET · Mohammedia</h4>
+            <p>
+              Précédé d'un DEUST Mathématiques, Informatique et Physique à la FST de Mohammedia (2020 - 2022).
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
